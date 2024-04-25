@@ -61,6 +61,9 @@ kaboom = true
 }
 if image_index &gt; 4
 instance_destroy()
+
+if kaboom and place_meeting(x,y,objLucas)
+scrHitLucas(irandom(3)*90,instance_place(x,y,objLucas),20)
 </string>
           </argument>
         </arguments>
