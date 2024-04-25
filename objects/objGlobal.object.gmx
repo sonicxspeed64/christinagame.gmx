@@ -66,6 +66,21 @@ exit;
 
 if pause
 {
+if menu = 1
+{
+if ball &lt; 5 and global.Downpress
+ball ++
+else if ball &gt; 0 and global.Uppress
+ball --
+
+if global.Xpress
+{
+menu = 0
+ball = 1
+}
+}
+else
+{
 if ball &lt; 2 and global.Downpress
 ball ++
 else if ball &gt; 0 and global.Uppress
@@ -76,6 +91,17 @@ if ball = 2
 {
 game_restart()
 save_settings()
+}
+else
+if ball = 1
+{
+menu = 1
+ball = 0
+}
+else
+{
+pause = !pause
+}
 }
 }
 }
@@ -134,6 +160,7 @@ else
 {
 transdir = 0
 transition = false
+global.item[4] = objChristina.espresso
 }
 }
 else
@@ -265,11 +292,23 @@ draw_text_hud(320,103,"Paused")
 draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 
+if menu = 1
+{
+draw_text_hud(200,160,"Christina")
+draw_text_hud(200,180,"Mark")
+draw_text_hud(200,200,"Lucas")
+draw_text_hud(200,220,"Blucas")
+draw_text_hud(200,240,"Pepper")
+}
+else
+{
 draw_text_hud(200,160,"Resume")
 draw_text_hud(200,180,"Change Character")
 draw_text_hud(200,200,"Quit")
+}
 
-draw_circle(180,160+ball*20,3,false)
+
+draw_circle(view_xview[0]+180,view_yview[0]+160+ball*20,3,false)
 }
 </string>
           </argument>
