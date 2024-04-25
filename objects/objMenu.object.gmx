@@ -411,13 +411,15 @@ global.item[2] = ini_read_real("Items","Bombs",false)
 
 global.item[3] = ini_read_real("Items","Lucas Blade",false)
 
-global.item[4] = ini_read_real("Items","Misc",false)
-global.item[5] = ini_read_real("Items","Misc",false)
+global.item[4] = ini_read_real("Items","Espresso",0)
+global.item[5] = ini_read_real("Items","CGF Containers",0)
 global.item[6] = ini_read_real("Items","Misc",false)
 
 global.item[7] = ini_read_real("Items","Finger1",false)
 global.item[8] = ini_read_real("Items","Finger2",false)
 global.item[9] = ini_read_real("Items","Finger3",false)
+
+global.slays = ini_read_real("Misc","Sleighs",0)
 
 ini_close()
 </string>

@@ -57,12 +57,6 @@ yspeed = 0
             <kind>1</kind>
             <string>if knock
 {
-if hurttime = 15
-{
-xspeed *= -1
-yspeed *= -1
-}
-
 hurttime --
 if hurttime = 0
 {
@@ -87,7 +81,13 @@ x += xspeed
 y += yspeed
 
 if hp &lt;= 0
+{
 instance_destroy()
+global.slays ++
+
+if global.slays % 5 = 0
+instance_create(x,y,objEspresso)
+}
 </string>
           </argument>
         </arguments>

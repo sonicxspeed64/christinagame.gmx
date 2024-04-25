@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>pause = false
+transition = false
+slidetime = 0
+transdir = 0
 </string>
           </argument>
         </arguments>
@@ -52,6 +55,89 @@
 
 if global.Enterpress
 pause = !pause
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Room transitions
+
+if transition
+{
+if slidetime &gt; 0
+{
+if transdir = 0
+{
+view_xview[0] += 32
+objChristina.x ++
+}
+else if transdir = 90
+{
+view_yview[0] -= 18
+objChristina.y --
+}
+else if transdir = 180
+{
+view_xview[0] -= 32
+objChristina.x --
+}
+else if transdir = 270
+{
+view_yview[0] += 18
+objChristina.y ++
+}
+
+slidetime --
+}
+else
+{
+transdir = 0
+transition = false
+}
+}
+else
+{
+if objChristina.x + objChristina.xspeed &gt; view_xview[0] + 640
+    or objChristina.x + objChristina.xspeed &lt; view_xview[0]
+{
+transition = true
+slidetime = 20
+
+if objChristina.xspeed &gt; 0
+transdir = 0
+else
+transdir = 180
+}
+else
+if objChristina.y + objChristina.yspeed &gt; view_yview[0] + 360
+    or objChristina.y + objChristina.yspeed &lt; view_yview[0]
+{
+transition = true
+slidetime = 20
+
+if objChristina.yspeed &gt; 0
+transdir = 270
+else
+transdir = 90
+}
+}
 </string>
           </argument>
         </arguments>
@@ -97,7 +183,7 @@ draw_sprite_hud(sprSpecialItem,k+7,600,32)
 }
 
 draw_sprite_hud(sprSpecialItem,6,46,312)
-draw_text(75,320,"x" + string(objChristina.espresso))
+draw_text(75+view_xview[0],320+view_yview[0],"x" + string(objChristina.espresso))
 for (k = 0; k &lt; objChristina.hp; k ++)
 draw_sprite_hud(sprGreenHeart,0,32+k*20,32)
 </string>
