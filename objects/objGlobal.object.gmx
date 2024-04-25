@@ -27,8 +27,11 @@
             <kind>1</kind>
             <string>pause = false
 transition = false
-slidetime = 0
+slidetime = 3
 transdir = 0
+
+ball = 0
+menu = 0
 </string>
           </argument>
         </arguments>
@@ -53,8 +56,29 @@ transdir = 0
             <kind>1</kind>
             <string>///Pause
 
-if global.Enterpress
+if global.Enterpress and slidetime = 0
+{
 pause = !pause
+ball = 0
+menu = 0
+exit;
+}
+
+if pause
+{
+if ball &lt; 2 and global.Downpress
+ball ++
+else if ball &gt; 0 and global.Uppress
+ball --
+else if global.Zpress
+{
+if ball = 2
+{
+game_restart()
+save_settings()
+}
+}
+}
 </string>
           </argument>
         </arguments>
@@ -104,7 +128,7 @@ view_yview[0] += 18
 objChristina.y ++
 }
 
-slidetime --
+//slidetime --
 }
 else
 {
@@ -118,7 +142,7 @@ if objChristina.x + objChristina.xspeed &gt; view_xview[0] + 640
     or objChristina.x + objChristina.xspeed &lt; view_xview[0]
 {
 transition = true
-slidetime = 20
+slidetime = 20 + 1
 
 if objChristina.xspeed &gt; 0
 transdir = 0
@@ -130,7 +154,7 @@ if objChristina.y + objChristina.yspeed &gt; view_yview[0] + 360
     or objChristina.y + objChristina.yspeed &lt; view_yview[0]
 {
 transition = true
-slidetime = 20
+slidetime = 20 + 1
 
 if objChristina.yspeed &gt; 0
 transdir = 270
@@ -138,6 +162,29 @@ else
 transdir = 90
 }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Slidetime
+if slidetime &gt; 0
+slidetime --
 </string>
           </argument>
         </arguments>
@@ -186,6 +233,44 @@ draw_sprite_hud(sprSpecialItem,6,46,312)
 draw_text(75+view_xview[0],320+view_yview[0],"x" + string(objChristina.espresso))
 for (k = 0; k &lt; objChristina.hp; k ++)
 draw_sprite_hud(sprGreenHeart,0,32+k*20,32)
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Pause
+
+if pause
+{
+draw_set_halign(fa_center)
+draw_set_valign(fa_bottom)
+
+draw_text_hud(320,103,"Paused")
+
+draw_set_halign(fa_left)
+draw_set_valign(fa_middle)
+
+draw_text_hud(200,160,"Resume")
+draw_text_hud(200,180,"Change Character")
+draw_text_hud(200,200,"Quit")
+
+draw_circle(180,160+ball*20,3,false)
+}
 </string>
           </argument>
         </arguments>

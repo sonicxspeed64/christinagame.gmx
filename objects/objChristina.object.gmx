@@ -96,6 +96,9 @@ hp = 3
             <kind>1</kind>
             <string>///Mapping
 
+if playable
+if !objGlobal.pause and !objGlobal.transition
+{
 if place_meeting(x+xspeed,y,objSolid)
 {
 for (k = abs(xspeed); k &gt; 0; k --)
@@ -121,6 +124,7 @@ yspeed = 0
 }
 else
 y += yspeed
+}
 </string>
           </argument>
         </arguments>
@@ -143,8 +147,8 @@ y += yspeed
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if playable //and !objGlobal.pause
-if !knock
+            <string>if playable
+if !knock and !objGlobal.pause and !objGlobal.transition
 {
 if sprite_index = sprChar or sprite_index = sprCharDown or sprite_index = sprCharUp
 {
@@ -401,6 +405,8 @@ with instance_place(x,y,objEspresso) instance_destroy()
 espresso ++
 }
 
+if !objGlobal.pause and !objGlobal.transition
+{
 if hurttime &gt; 0
 {
 hurttime --
@@ -489,6 +495,7 @@ step = 120
 
 image_xscale = sign(image_xscale)
 image_yscale = sign(image_yscale)
+}
 }
 </string>
           </argument>

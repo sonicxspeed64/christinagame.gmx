@@ -55,7 +55,9 @@ yspeed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if knock
+            <string>if !objGlobal.pause and !objGlobal.transition
+{
+if knock
 {
 hurttime --
 if hurttime = 0
@@ -87,6 +89,7 @@ global.slays ++
 
 if global.slays % 5 = 0
 instance_create(x,y,objEspresso)
+}
 }
 </string>
           </argument>

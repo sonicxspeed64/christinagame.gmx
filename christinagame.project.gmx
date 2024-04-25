@@ -37,6 +37,7 @@
       <sprite>sprites\sprSolid</sprite>
       <sprite>sprites\sprMask</sprite>
       <sprite>sprites\sprLucas</sprite>
+      <sprite>sprites\sprBlucas</sprite>
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
