@@ -48,6 +48,7 @@
   <scripts name="scripts">
     <scripts name="foldscrAssign">
       <script>scripts\scrAssignSprites.gml</script>
+      <script>scripts\scrHitLucas.gml</script>
     </scripts>
     <scripts name="foldscrSettings">
       <script>scripts\audio_set_volumes.gml</script>

@@ -55,6 +55,12 @@ y += yspeed
 if x &lt; view_xview[0] or x &gt; view_xview[0] + 640
     or y &lt; view_yview[0] or y &gt; view_yview[0] + 360
 instance_destroy()
+
+if place_meeting(x,y,objLucas)
+{
+scrHitLucas(image_angle,instance_place(x,y,objLucas),1)
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

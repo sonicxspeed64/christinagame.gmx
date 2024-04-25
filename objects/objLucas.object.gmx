@@ -28,7 +28,7 @@
             <string>xspeed = 1
 image_speed = 0.25
 step = 60
-hp = 3
+hp = 5
 knock = false
 hurttime = 0
 
@@ -85,6 +85,9 @@ xspeed *= -1
 
 x += xspeed
 y += yspeed
+
+if hp &lt;= 0
+instance_destroy()
 </string>
           </argument>
         </arguments>

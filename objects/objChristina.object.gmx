@@ -43,6 +43,8 @@ slidetime = 0
 knock = false
 hurt = false
 hurttime = 0
+
+atk = 2 + global.item[3] * 5
 </string>
           </argument>
         </arguments>
@@ -428,6 +430,8 @@ if place_meeting(x,y,objLucas)
 var luke = instance_place(x,y,objLucas).id;
 //if shielding
 
+if !luke.knock
+{
 hurt = true
 knock = true
 hp --
@@ -446,29 +450,15 @@ dir = 90 - image_xscale * 90
 hurttime = 131
 }
 }
+}
 
 if swording
 {
 mask_index = sprite_index
 
 if place_meeting(x,y,objLucas)
-{
-var luke = instance_place(x,y,objLucas);
-
-luke.xspeed = dcos(dir) * 3
-luke.yspeed = dsin(dir) * -3
-
-with luke
-{
-knock = true
-hurttime = 29
-}
-}
-
-
-
-
-
+    and !instance_place(x,y,objLucas).knock
+scrHitLucas(dir,instance_place(x,y,objLucas),atk)
 
 mask_index = sprMask
 }
