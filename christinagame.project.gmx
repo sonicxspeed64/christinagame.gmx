@@ -36,6 +36,7 @@
     <sprites name="foldsprMisc">
       <sprite>sprites\sprSolid</sprite>
       <sprite>sprites\sprMask</sprite>
+      <sprite>sprites\sprLucas</sprite>
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
@@ -72,6 +73,7 @@
     <object>objects\objInputs</object>
     <objects name="foldobjMisc">
       <object>objects\objSolid</object>
+      <object>objects\objLucas</object>
     </objects>
     <objects name="foldobjObjects">
       <object>objects\objArrow</object>
