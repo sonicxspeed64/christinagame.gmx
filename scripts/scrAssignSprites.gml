@@ -1,6 +1,27 @@
 //argument0 = string value for character
 
-if argument0 = "Link"
+if argument0 = "Christina"
+{
+sprChar = sprChristina
+sprCharDown = sprChristinaDown
+sprCharUp = sprChristinaUp
+
+sprCharShield = sprLinkShield       ///
+sprCharShieldDown = sprChristinaShieldDown       ///
+sprCharShieldUp = sprLinkShieldUp       ///
+
+sprCharUse = sprLinkUse       ///
+sprCharUseDown = sprChristinaUseDown       ///
+sprCharUseUp = sprLinkUseUp       ///
+
+sprCharArrow = sprLinkArrow       ///
+sprCharBomb = sprLinkBomb       ///
+
+sprCharSword = sprLinkSword       ///
+sprCharSwordDown = sprLinkSwordDown       ///
+sprCharSwordUp = sprLinkSwordUp       ///
+}
+else if argument0 = "Link"
 {
 sprChar = sprLink
 sprCharDown = sprLinkDown
@@ -21,7 +42,7 @@ sprCharSword = sprLinkSword
 sprCharSwordDown = sprLinkSwordDown
 sprCharSwordUp = sprLinkSwordUp
 }
-if argument0 = "Rink"
+else if argument0 = "Rink"
 {
 sprChar = sprRink
 sprCharDown = sprRinkDown

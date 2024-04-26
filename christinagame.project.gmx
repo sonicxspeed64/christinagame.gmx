@@ -17,6 +17,13 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
+    <sprites name="foldsprChristina">
+      <sprite>sprites\sprChristina</sprite>
+      <sprite>sprites\sprChristinaDown</sprite>
+      <sprite>sprites\sprChristinaUp</sprite>
+      <sprite>sprites\sprChristinaShieldDown</sprite>
+      <sprite>sprites\sprChristinaUseDown</sprite>
+    </sprites>
     <sprites name="foldsprLink">
       <sprite>sprites\sprLink</sprite>
       <sprite>sprites\sprLinkDown</sprite>
