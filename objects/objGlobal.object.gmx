@@ -259,7 +259,7 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_set_colour(c_white)
 
-draw_sprite_hud(sprSpecialItem,2,600,32)
+draw_sprite_hud(sprRawwkFingers,0,600,32)
 
 for (k = 0; k &lt; 3; k ++)
 {
@@ -272,7 +272,7 @@ if objChristina.itemAvail[k]
 draw_sprite_hud(sprSpecialItem,k+3,528+k*36,312)
 
 if global.item[k+7]
-draw_sprite_hud(sprSpecialItem,k+7,600,32)
+draw_sprite_hud(sprSpecialItem,k+1,600,32)
 }
 
 draw_sprite_hud(sprSpecialItem,6,46,312)

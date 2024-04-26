@@ -66,6 +66,7 @@
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
       <sprite>sprites\sprGreenHeart</sprite>
+      <sprite>sprites\sprRawwkFingers</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
