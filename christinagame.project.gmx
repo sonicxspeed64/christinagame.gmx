@@ -33,11 +33,28 @@
       <sprite>sprites\sprLinkArrow</sprite>
       <sprite>sprites\sprLinkBomb</sprite>
     </sprites>
+    <sprites name="foldsprRink">
+      <sprite>sprites\sprRink</sprite>
+      <sprite>sprites\sprRinkDown</sprite>
+      <sprite>sprites\sprRinkUp</sprite>
+      <sprite>sprites\sprRinkShield</sprite>
+      <sprite>sprites\sprRinkShieldDown</sprite>
+      <sprite>sprites\sprRinkShieldUp</sprite>
+      <sprite>sprites\sprRinkUse</sprite>
+      <sprite>sprites\sprRinkUseDown</sprite>
+      <sprite>sprites\sprRinkUseUp</sprite>
+      <sprite>sprites\sprRinkSword</sprite>
+      <sprite>sprites\sprRinkSwordDown</sprite>
+      <sprite>sprites\sprRinkSwordUp</sprite>
+      <sprite>sprites\sprRinkArrow</sprite>
+      <sprite>sprites\sprRinkBomb</sprite>
+    </sprites>
     <sprites name="foldsprMisc">
       <sprite>sprites\sprSolid</sprite>
       <sprite>sprites\sprMask</sprite>
       <sprite>sprites\sprLucas</sprite>
       <sprite>sprites\sprBlucas</sprite>
+      <sprite>sprites\sprGrass</sprite>
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
@@ -83,6 +100,7 @@
       <object>objects\objArrow</object>
       <object>objects\objBomb</object>
       <object>objects\objEspresso</object>
+      <object>objects\objGrass</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -68,10 +68,29 @@ if pause
 {
 if menu = 1
 {
+var prevball = ball;
+
 if ball &lt; 5 and global.Downpress
 ball ++
 else if ball &gt; 0 and global.Uppress
 ball --
+
+if ball != prevball
+{
+if ball = 0
+with objChristina scrAssignSprites("Link")
+else if ball = 1
+with objChristina scrAssignSprites("Rink")
+
+with objChristina
+{
+sprite_index = sprCharDown
+dir = 270
+slidetime = 0
+shielding = false
+swording = false
+}
+}
 
 if global.Xpress
 {

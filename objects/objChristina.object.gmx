@@ -454,7 +454,7 @@ image_xscale = 1
 
 xspeed = image_xscale * -4
 
-sprite_index = sprLink
+sprite_index = sprChar
 dir = 90 - image_xscale * 90
 hurttime = 131
 }
@@ -468,6 +468,22 @@ mask_index = sprite_index
 if place_meeting(x,y,objLucas)
     and !instance_place(x,y,objLucas).knock
 scrHitLucas(dir,instance_place(x,y,objLucas),atk)
+
+image_xscale *= 0.75
+image_yscale *= 0.75
+
+var orignal_x = x, orignal_y = y;
+
+x += dcos(dir) * 10
+y -= dsin(dir) * 10
+
+if place_meeting(x,y,objGrass)
+with instance_place(x,y,objGrass) instance_destroy()
+
+image_xscale = sign(image_xscale)
+image_yscale = sign(image_yscale)
+x = orignal_x
+y = orignal_y
 
 mask_index = sprMask
 }

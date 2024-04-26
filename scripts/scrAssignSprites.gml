@@ -21,3 +21,24 @@ sprCharSword = sprLinkSword
 sprCharSwordDown = sprLinkSwordDown
 sprCharSwordUp = sprLinkSwordUp
 }
+if argument0 = "Rink"
+{
+sprChar = sprRink
+sprCharDown = sprRinkDown
+sprCharUp = sprRinkUp
+
+sprCharShield = sprRinkShield
+sprCharShieldDown = sprRinkShieldDown
+sprCharShieldUp = sprRinkShieldUp
+
+sprCharUse = sprRinkUse
+sprCharUseDown = sprRinkUseDown
+sprCharUseUp = sprRinkUseUp
+
+sprCharArrow = sprRinkArrow
+sprCharBomb = sprRinkBomb
+
+sprCharSword = sprRinkSword
+sprCharSwordDown = sprRinkSwordDown
+sprCharSwordUp = sprRinkSwordUp
+}
