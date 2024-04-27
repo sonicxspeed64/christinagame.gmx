@@ -32,6 +32,8 @@ transdir = 0
 
 ball = 0
 menu = 0
+
+play_music(mscInvisible)
 </string>
           </argument>
         </arguments>
