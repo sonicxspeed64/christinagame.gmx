@@ -262,16 +262,19 @@ if sprite_index = sprCharDown
 {
 sprite_index = sprCharUseDown
 sword.image_angle = 180 + image_xscale * 90
+sword.dir = 270
 }
 else if sprite_index = sprCharUp
 {
 sprite_index = sprCharUseUp
 sword.image_angle = 180 - image_xscale * 90
+sword.dir = 90
 }
 else
 {
 sprite_index = sprCharUse
 sword.image_angle = 0
+sword.dir = 90 - image_xscale * 90
 }
 sword.image_xscale = image_xscale
 swording = true
@@ -482,33 +485,7 @@ hurttime = 131
 }
 }
 
-if swording
-{
-mask_index = sprite_index
-
-if place_meeting(x,y,objLucas)
-    and !instance_place(x,y,objLucas).knock
-scrHitLucas(dir,instance_place(x,y,objLucas),atk)
-
-image_xscale *= 0.75
-image_yscale *= 0.75
-
-var orignal_x = x, orignal_y = y;
-
-x += dcos(dir) * 10
-y -= dsin(dir) * 10
-
-if place_meeting(x,y,objGrass)
-with instance_place(x,y,objGrass) instance_destroy()
-
-image_xscale = sign(image_xscale)
-image_yscale = sign(image_yscale)
-x = orignal_x
-y = orignal_y
-
-mask_index = sprMask
-}
-else if shielding
+if shielding
 {
 image_xscale *= 1.25
 image_yscale *= 1.25
