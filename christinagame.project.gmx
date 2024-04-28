@@ -20,10 +20,15 @@
   <sprites name="sprites">
     <sprites name="foldsprChristina">
       <sprite>sprites\sprChristina</sprite>
+      <sprite>sprites\sprChristinaUse</sprite>
       <sprite>sprites\sprChristinaDown</sprite>
       <sprite>sprites\sprChristinaUp</sprite>
+      <sprite>sprites\sprChristinaShieldUp</sprite>
+      <sprite>sprites\sprChristinaUseUp</sprite>
+      <sprite>sprites\sprChristinaShield</sprite>
       <sprite>sprites\sprChristinaShieldDown</sprite>
       <sprite>sprites\sprChristinaUseDown</sprite>
+      <sprite>sprites\sprChristinaSword</sprite>
     </sprites>
     <sprites name="foldsprLink">
       <sprite>sprites\sprLink</sprite>
@@ -108,6 +113,7 @@
     <objects name="foldobjObjects">
       <object>objects\objArrow</object>
       <object>objects\objBomb</object>
+      <object>objects\objSword</object>
       <object>objects\objEspresso</object>
       <object>objects\objGrass</object>
     </objects>

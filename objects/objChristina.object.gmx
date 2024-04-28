@@ -256,16 +256,38 @@ espresso -= 7
 else
 if global.Xpress
 {
-if sprite_index = sprCharDown
-sprite_index = sprCharSwordDown
-else if sprite_index = sprCharUp
-sprite_index = sprCharSwordUp
-else
-sprite_index = sprCharSword
+var sword = instance_create(x,y,objSword);
 
+if sprite_index = sprCharDown
+{
+sprite_index = sprCharUseDown
+sword.image_angle = 180 + image_xscale * 90
+}
+else if sprite_index = sprCharUp
+{
+sprite_index = sprCharUseUp
+sword.image_angle = 180 - image_xscale * 90
+}
+else
+{
+sprite_index = sprCharUse
+sword.image_angle = 0
+}
+sword.image_xscale = image_xscale
 swording = true
 xspeed = 0
 yspeed = 0
+
+with sword
+{
+var dx = dcos(image_angle), dy = dsin(image_angle);
+
+x += dx * 4 * image_xscale
+y += dy * -4 * image_xscale
+
+xspeed = dx * 4 * image_xscale
+yspeed = dy * -4 * image_xscale
+}
 }
 
 if xspeed = 0 and yspeed = 0
@@ -312,13 +334,12 @@ shielding = false
 else
 if swording
 {
-image_index += 0.4
-if image_index &gt;= image_number
+if !instance_exists(objSword)
 {
 swording = false
-if sprite_index = sprCharSwordUp
+if sprite_index = sprCharUseUp
 sprite_index = sprCharUp
-else if sprite_index = sprCharSwordDown
+else if sprite_index = sprCharUseDown
 sprite_index = sprCharDown
 else
 sprite_index = sprChar

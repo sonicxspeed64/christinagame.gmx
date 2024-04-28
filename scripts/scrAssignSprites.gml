@@ -1,4 +1,4 @@
-//argument0 = string value for character
+//argumt0 = string value for character
 
 if argument0 = "Christina"
 {
@@ -6,13 +6,13 @@ sprChar = sprChristina
 sprCharDown = sprChristinaDown
 sprCharUp = sprChristinaUp
 
-sprCharShield = sprLinkShield       ///
-sprCharShieldDown = sprChristinaShieldDown       ///
-sprCharShieldUp = sprLinkShieldUp       ///
+sprCharShield = sprChristinaShield
+sprCharShieldDown = sprChristinaShieldDown
+sprCharShieldUp = sprChristinaShieldUp
 
-sprCharUse = sprLinkUse       ///
-sprCharUseDown = sprChristinaUseDown       ///
-sprCharUseUp = sprLinkUseUp       ///
+sprCharUse = sprChristinaUse
+sprCharUseDown = sprChristinaUseDown
+sprCharUseUp = sprChristinaUseUp
 
 sprCharArrow = sprLinkArrow       ///
 sprCharBomb = sprLinkBomb       ///
