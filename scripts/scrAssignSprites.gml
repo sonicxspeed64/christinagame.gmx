@@ -14,7 +14,7 @@ sprCharUse = sprChristinaUse
 sprCharUseDown = sprChristinaUseDown
 sprCharUseUp = sprChristinaUseUp
 
-sprCharArrow = sprLinkArrow
+sprCharArrow = sprChristinaArrow
 sprCharBomb = sprChristinaBomb
 }
 else if argument0 = "Rink"
