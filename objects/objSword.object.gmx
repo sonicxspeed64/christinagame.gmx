@@ -55,6 +55,8 @@ if place_meeting(x,y,objLucas)
 if !instance_place(x,y,objLucas).knock
 scrHitLucas(dir,instance_place(x,y,objLucas),objChristina.atk)
 }
+if place_meeting(x,y,objGrass)
+with instance_place(x,y,objGrass) instance_destroy()
 </string>
           </argument>
         </arguments>

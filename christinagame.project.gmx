@@ -29,6 +29,7 @@
       <sprite>sprites\sprChristinaShieldDown</sprite>
       <sprite>sprites\sprChristinaUseDown</sprite>
       <sprite>sprites\sprChristinaSword</sprite>
+      <sprite>sprites\sprChristinaBomb</sprite>
     </sprites>
     <sprites name="foldsprLink">
       <sprite>sprites\sprLink</sprite>
@@ -44,7 +45,6 @@
       <sprite>sprites\sprLinkSwordDown</sprite>
       <sprite>sprites\sprLinkSwordUp</sprite>
       <sprite>sprites\sprLinkArrow</sprite>
-      <sprite>sprites\sprLinkBomb</sprite>
     </sprites>
     <sprites name="foldsprRink">
       <sprite>sprites\sprRink</sprite>
