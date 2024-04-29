@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>hp = 30
 
-xspeed = 0.5
+xspeed = -0.5
 yspeed = 0
-dir = 0
+dir = 180
 
 knock = false
 hurttime = 0
@@ -101,6 +101,17 @@ global.slays ++
 instance_create(x,y,objGetThat)
 with instance_nearest(x,y,objGetThat) image_index = 10
 }
+}
+
+if x &gt; view_xview[0] + 640
+    or x &lt; view_xview[0]
+    or y &gt; view_yview[0] + 360
+    or y &lt; view_yview[0]
+{
+x = xstart
+y = ystart
+xspeed = -2
+dir = 180
 }
 </string>
           </argument>

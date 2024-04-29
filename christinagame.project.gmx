@@ -42,6 +42,8 @@
       <sprite>sprites\sprBoss</sprite>
       <sprite>sprites\sprCannon</sprite>
       <sprite>sprites\sprCrackedTile</sprite>
+      <sprite>sprites\sprRavine</sprite>
+      <sprite>sprites\sprBalloon</sprite>
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
@@ -89,6 +91,8 @@
       <object>objects\objCannon</object>
       <object>objects\objMayo</object>
       <object>objects\objCrackedTile</object>
+      <object>objects\objRavine</object>
+      <object>objects\objBalloon</object>
     </objects>
     <objects name="foldobjObjects">
       <object>objects\objArrow</object>

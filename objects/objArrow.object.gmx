@@ -67,6 +67,16 @@ else if place_meeting(x,y,objLucas)
 scrHitLucas(image_angle,instance_place(x,y,objLucas),1,2)
 instance_destroy()
 }
+/*else if place_meeting(x,y,objSolid)
+{
+if instance_place(x,y,objSolid).sprite_index != sprRavine
+instance_destroy()
+}*/
+else if place_meeting(x,y,objBalloon)
+{
+with instance_place(x,y,objBalloon) instance_destroy()
+instance_destroy()
+}
 
 if step % 3 = 0
 image_yscale *= -1

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>slidetime = 64
+            <string>slidetime = irandom(4) * 16
 
 dcosh = x
 dsinh = y
@@ -83,10 +83,14 @@ slidetime --
 else
 {
 slidetime = 64
+if x &gt; view_xview[0] and x &lt; view_xview[0] + 640
+    and y &gt; view_yview[0] and y &lt; view_yview[0] + 360
+{
 var mayo = instance_create(x+dcosh*8,y-dsinh*8,objMayo);
 mayo.xspeed = dcosh*4
 mayo.yspeed = dsinh*-4
 mayo.image_angle = image_angle
+}
 }
 </string>
           </argument>
