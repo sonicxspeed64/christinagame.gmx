@@ -107,6 +107,7 @@ global.mmy = mouse_y
             <string>///Inputs
 
 global.Left = keyboard_check(vk_left) or keyboard_check(ord('A'))
+    or gamepad_button_check(0,gp_padl)
 if global.Left
 {
 if global.Leftpress = 0
@@ -118,6 +119,7 @@ else
 global.Leftpress = 0
 
 global.Right = keyboard_check(vk_right) or keyboard_check(ord('D'))
+    or gamepad_button_check(0,gp_padr)
 if global.Right
 {
 if global.Rightpress = 0
@@ -129,6 +131,7 @@ else
 global.Rightpress = 0
 
 global.Up = keyboard_check(vk_up) or keyboard_check(ord('W'))
+    or gamepad_button_check(0,gp_padu)
 if global.Up
 {
 if global.Uppress = 0
@@ -140,6 +143,7 @@ else
 global.Uppress = 0
 
 global.Down = keyboard_check(vk_down) or keyboard_check(ord('S'))
+    or gamepad_button_check(0,gp_padd)
 if global.Down
 {
 if global.Downpress = 0
@@ -151,6 +155,7 @@ else
 global.Downpress = 0
 
 global.Z = keyboard_check(vk_space) or keyboard_check(ord('Z'))
+    or gamepad_button_check(0,gp_face2)
 if global.Z
 {
 if global.Zpress = 0
@@ -162,6 +167,7 @@ else
 global.Zpress = 0
 
 global.X = keyboard_check(ord('X')) or keyboard_check(ord('K')) or keyboard_check(vk_numpad5)
+    or gamepad_button_check(0,gp_face1)    or gamepad_button_check(0,gp_face4)
 if global.X
 {
 if global.Xpress = 0
@@ -173,6 +179,7 @@ else
 global.Xpress = 0
 
 global.C = keyboard_check(vk_shift) or keyboard_check(ord('C'))
+    or gamepad_button_check(0,gp_face3)
 if global.C
 {
 if global.Cpress = 0
@@ -184,6 +191,7 @@ else
 global.Cpress = 0
 
 global.Enter = keyboard_check(vk_enter) or keyboard_check(vk_escape) or keyboard_check(vk_return)
+    or gamepad_button_check(0,gp_start)
 if global.Enter
 {
 if global.Enterpress = 0
@@ -195,6 +203,7 @@ else
 global.Enterpress = 0
 
 global.Back = keyboard_check(vk_backspace) or keyboard_check(vk_delete)
+    or gamepad_button_check(0,gp_select) or gamepad_button_check(0,gp_shoulderr) or gamepad_button_check(0,gp_shoulderrb)
 if global.Back
 {
 if global.Backpress = 0
