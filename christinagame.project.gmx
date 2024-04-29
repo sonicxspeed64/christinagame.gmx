@@ -41,7 +41,7 @@
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
-      <sprite>sprites\sprGreenHeart</sprite>
+      <sprite>sprites\sprSmallItem</sprite>
       <sprite>sprites\sprRawwkFingers</sprite>
       <sprite>sprites\sprChristinaBig</sprite>
     </sprites>
@@ -85,8 +85,8 @@
       <object>objects\objArrow</object>
       <object>objects\objBomb</object>
       <object>objects\objSword</object>
-      <object>objects\objEspresso</object>
       <object>objects\objGrass</object>
+      <object>objects\objSmallPickup</object>
       <object>objects\objGetThat</object>
     </objects>
   </objects>

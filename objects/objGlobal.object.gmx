@@ -274,13 +274,13 @@ if objChristina.itemAvail[k]
 draw_sprite_hud(sprSpecialItem,k+3,528+k*36,312)
 
 if global.item[k+7]
-draw_sprite_hud(sprSpecialItem,k+1,600,32)
+draw_sprite_hud(sprRawwkFingers,k+1,600,32)
 }
 
 draw_sprite_hud(sprSpecialItem,6,46,312)
 draw_text(75+view_xview[0],320+view_yview[0],"x" + string(objChristina.espresso))
 for (k = 0; k &lt; objChristina.hp; k ++)
-draw_sprite_hud(sprGreenHeart,0,32+k*20,32)
+draw_sprite_hud(sprSmallItem,1,32+k*20,32)
 </string>
           </argument>
         </arguments>
