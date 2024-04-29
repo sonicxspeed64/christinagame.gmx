@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1280</width>
   <height>1080</height>
-  <vsnap>20</vsnap>
+  <vsnap>10</vsnap>
   <hsnap>10</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -137,11 +137,9 @@
     <instance objName="objGetThat" x="960" y="200" name="inst_DAE4942A" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="1160" y="640" name="inst_99EA4070" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="1140" y="940" name="inst_811ADACF" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGetThat" x="980" y="440" name="inst_B31CA9DF" locked="0" code="image_index = 10&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGetThat" x="520" y="640" name="inst_CE93628D" locked="0" code="image_index = 10&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="160" y="880" name="inst_A3E59B23" locked="0" code="image_index = 4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="720" y="60" name="inst_6852C53F" locked="0" code="image_index = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="840" y="20" name="inst_037D1F13" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objSolid" x="840" y="100" name="inst_037D1F13" locked="0" code="" scaleX="3" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="900" y="220" name="inst_387A41FC" locked="0" code="" scaleX="12" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="1160" y="60" name="inst_DCE89D87" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objBoss" x="930" y="160" name="inst_056FE8AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -157,6 +155,9 @@
     <instance objName="objSmallPickup" x="1250" y="240" name="inst_73374189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSmallPickup" x="1240" y="260" name="inst_A56C0BBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSmallPickup" x="1240" y="120" name="inst_8F71BDB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGate" x="840" y="20" name="inst_1CE91063" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objCannon" x="830" y="300" name="inst_C378142B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="objCannon" x="1160" y="290" name="inst_014BBC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -53,7 +53,7 @@
 if place_meeting(x,y,objLucas)
 {
 if !instance_place(x,y,objLucas).knock
-scrHitLucas(dir,instance_place(x,y,objLucas),objChristina.atk)
+scrHitLucas(dir,instance_place(x,y,objLucas),objChristina.atk,3)
 }
 if place_meeting(x,y,objGrass)
 with instance_place(x,y,objGrass) instance_destroy()
@@ -61,11 +61,7 @@ if place_meeting(x,y,objBoss)
 {
 var boss = instance_place(x,y,objBoss).id
 if !boss.knock
-{
-scrHitLucas(dir,instance_place(x,y,objBoss),objChristina.atk)
-boss.xspeed /= 3
-boss.yspeed /= 3
-}
+scrHitLucas(dir,instance_place(x,y,objBoss),objChristina.atk,1)
 }
 </string>
           </argument>

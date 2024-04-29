@@ -3,6 +3,6 @@
 
 argument1.knock = true
 argument1.hurttime = 19
-argument1.xspeed = dcos(argument0) * 3
-argument1.yspeed = dsin(argument0) * -3
+argument1.xspeed = dcos(argument0) * argument3
+argument1.yspeed = dsin(argument0) * -argument3
 argument1.hp -= argument2

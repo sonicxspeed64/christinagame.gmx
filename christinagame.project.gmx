@@ -34,11 +34,13 @@
     </sprites>
     <sprites name="foldsprMisc">
       <sprite>sprites\sprSolid</sprite>
+      <sprite>sprites\sprGate</sprite>
       <sprite>sprites\sprMask</sprite>
       <sprite>sprites\sprLucas</sprite>
       <sprite>sprites\sprBlucas</sprite>
       <sprite>sprites\sprGrass</sprite>
       <sprite>sprites\sprBoss</sprite>
+      <sprite>sprites\sprCannon</sprite>
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
@@ -82,6 +84,9 @@
       <object>objects\objSolid</object>
       <object>objects\objLucas</object>
       <object>objects\objBoss</object>
+      <object>objects\objGate</object>
+      <object>objects\objCannon</object>
+      <object>objects\objMayo</object>
     </objects>
     <objects name="foldobjObjects">
       <object>objects\objArrow</object>

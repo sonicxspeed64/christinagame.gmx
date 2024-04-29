@@ -516,6 +516,12 @@ step = 120
 }
 }
 }
+if place_meeting(x,y,objMayo)
+{
+var mayo = instance_place(x,y,objMayo);
+
+with mayo instance_destroy()
+}
 
 image_xscale = sign(image_xscale)
 image_yscale = sign(image_yscale)

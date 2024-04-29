@@ -66,8 +66,15 @@ else if countdown = -5
 instance_destroy()
 }
 
-if kaboom and place_meeting(x,y,objLucas)
-scrHitLucas(irandom(3)*90,instance_place(x,y,objLucas),20)
+if kaboom 
+{
+if place_meeting(x,y,objLucas)
+scrHitLucas(irandom(3)*90,instance_place(x,y,objLucas),20,10)
+else
+if place_meeting(x,y,objBoss)
+scrHitLucas(irandom(3)*90,instance_place(x,y,objBoss),20,5)
+
+}
 </string>
           </argument>
         </arguments>
