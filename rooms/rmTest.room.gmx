@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>1080</height>
-  <vsnap>10</vsnap>
-  <hsnap>10</hsnap>
+  <vsnap>20</vsnap>
+  <hsnap>20</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -158,6 +158,26 @@
     <instance objName="objGate" x="840" y="20" name="inst_1CE91063" locked="0" code="" scaleX="3" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objCannon" x="830" y="300" name="inst_C378142B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="objCannon" x="1160" y="290" name="inst_014BBC52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="objCrackedTile" x="960" y="580" name="inst_FB9EE769" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="960" y="640" name="inst_E5DACF84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="960" y="600" name="inst_3704DF7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="960" y="620" name="inst_CE5D7E94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="960" y="660" name="inst_FD7CEE8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="980" y="660" name="inst_634B32AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="980" y="640" name="inst_365F0B75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="980" y="620" name="inst_6B50C54A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="980" y="600" name="inst_1E0863B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="980" y="580" name="inst_45503944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="1000" y="580" name="inst_B4710111" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="1000" y="600" name="inst_A8417F48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="1000" y="620" name="inst_7F1B25D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="1000" y="640" name="inst_2259E37A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="1000" y="660" name="inst_8F326288" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="960" y="680" name="inst_D6A2946F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="980" y="680" name="inst_EC81B6A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrackedTile" x="1000" y="680" name="inst_62B455C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBoss" x="1060" y="480" name="inst_267D1440" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGate" x="960" y="400" name="inst_E30E042A" locked="0" code="" scaleX="3" scaleY="6" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -493,12 +493,36 @@ dir = 90 - image_xscale * 90
 hurttime = 131
 }
 }
+else if place_meeting(x,y,objMayo)
+{
+var mayo = instance_place(x,y,objMayo);
+
+hurt = true
+knock = true
+hp --
+swording = false
+shielding = false
+
+xspeed = mayo.xspeed
+yspeed = mayo.yspeed
+sprite_index = sprCharDown
+dir = 270
+
+hurttime = 131
+
+with mayo instance_destroy()
+}
 }
 
 if shielding
 {
+var prevx = x, prevy = y;
+
 image_xscale *= 1.25
 image_yscale *= 1.25
+
+x += dcos(dir) * 4
+y += dsin(dir) * -4
 
 if place_meeting(x,y,objLucas)
 {
@@ -525,6 +549,8 @@ with mayo instance_destroy()
 
 image_xscale = sign(image_xscale)
 image_yscale = sign(image_yscale)
+x = prevx
+y = prevy
 }
 }
 </string>
