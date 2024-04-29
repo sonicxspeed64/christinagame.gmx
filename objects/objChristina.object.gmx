@@ -71,7 +71,7 @@ espresso = global.item[4]
             <kind>1</kind>
             <string>///DEBUGGING
 
-hp = 3
+hp = 3 + global.item[5]
 </string>
           </argument>
         </arguments>

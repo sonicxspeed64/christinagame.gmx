@@ -38,6 +38,7 @@
       <sprite>sprites\sprLucas</sprite>
       <sprite>sprites\sprBlucas</sprite>
       <sprite>sprites\sprGrass</sprite>
+      <sprite>sprites\sprBoss</sprite>
     </sprites>
     <sprites name="foldsprHUD">
       <sprite>sprites\sprSpecialItem</sprite>
@@ -80,6 +81,7 @@
     <objects name="foldobjMisc">
       <object>objects\objSolid</object>
       <object>objects\objLucas</object>
+      <object>objects\objBoss</object>
     </objects>
     <objects name="foldobjObjects">
       <object>objects\objArrow</object>

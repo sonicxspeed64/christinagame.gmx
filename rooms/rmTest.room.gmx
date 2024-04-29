@@ -4,7 +4,7 @@
   <width>1280</width>
   <height>1080</height>
   <vsnap>20</vsnap>
-  <hsnap>20</hsnap>
+  <hsnap>10</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objChristina" x="320" y="192" name="inst_8948B512" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objChristina" x="600" y="300" name="inst_8948B512" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objInputs" x="60" y="40" name="inst_295E925E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGlobal" x="40" y="40" name="inst_66BF18CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="0" y="0" name="inst_37D4D9BB" locked="0" code="" scaleX="64" scaleY="1" colour="4294967295" rotation="0"/>
@@ -131,16 +131,32 @@
     <instance objName="objSmallPickup" x="520" y="500" name="inst_10811A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="1260" y="20" name="inst_963AB027" locked="0" code="" scaleX="1" scaleY="50" colour="4294967295" rotation="0"/>
     <instance objName="objSolid" x="0" y="1020" name="inst_903CB7A9" locked="0" code="" scaleX="64" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="720" y="340" name="inst_32C7D983" locked="0" code="" scaleX="27" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objSolid" x="760" y="100" name="inst_618FEEB0" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="objGetThat" x="720" y="60" name="inst_ED9D3090" locked="0" code="image_index = 5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGetThat" x="1160" y="260" name="inst_DAE4942A" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSolid" x="720" y="300" name="inst_32C7D983" locked="0" code="" scaleX="27" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="objSolid" x="760" y="60" name="inst_618FEEB0" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objGetThat" x="100" y="300" name="inst_ED9D3090" locked="0" code="image_index = 5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGetThat" x="960" y="200" name="inst_DAE4942A" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="1160" y="640" name="inst_99EA4070" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="1140" y="940" name="inst_811ADACF" locked="0" code="sprite_index = sprRawwkFingers&#xA;image_index = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="980" y="440" name="inst_B31CA9DF" locked="0" code="image_index = 10&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="520" y="640" name="inst_CE93628D" locked="0" code="image_index = 10&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGetThat" x="160" y="880" name="inst_A3E59B23" locked="0" code="image_index = 4&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objGetThat" x="120" y="280" name="inst_6852C53F" locked="0" code="image_index = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objGetThat" x="720" y="60" name="inst_6852C53F" locked="0" code="image_index = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSolid" x="840" y="20" name="inst_037D1F13" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objSolid" x="900" y="220" name="inst_387A41FC" locked="0" code="" scaleX="12" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objSolid" x="1160" y="60" name="inst_DCE89D87" locked="0" code="" scaleX="3" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="objBoss" x="930" y="160" name="inst_056FE8AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1240" y="100" name="inst_AC9EE75F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1240" y="140" name="inst_B8199440" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1230" y="160" name="inst_FB147960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1250" y="160" name="inst_D3924C43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1240" y="180" name="inst_A9E0CB49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1230" y="200" name="inst_5B67D1D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1250" y="200" name="inst_A1E9F974" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1240" y="220" name="inst_C926EFAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1230" y="240" name="inst_F644C90A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1250" y="240" name="inst_73374189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1240" y="260" name="inst_A56C0BBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSmallPickup" x="1240" y="120" name="inst_8F71BDB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
