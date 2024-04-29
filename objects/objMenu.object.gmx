@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu = 0
+            <string>menu = -1
 ball = 0
 alarm[0] = 1
 alarm[1] = 2
@@ -34,6 +34,60 @@ temph = window_get_height()
 apply = 0
 gomez = -1
 endgame = -1
+
+alarm[2] = 64
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>menu = 0
+play_music(mscMainTheme)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Start up
+
+audio_set_volumes()
+play_voice(vocPneumonoultramicroscopicsilicovolcanoconiosis)
+
+alarm[3] = 312
 </string>
           </argument>
         </arguments>
@@ -76,30 +130,6 @@ global.volume[1] = ini_read_real("Settings","Volume SFX",0.5)
 global.volume[2] = ini_read_real("Settings","Volume Voices",0.5)
 
 ini_close()
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Start up
-
-audio_set_volumes()
-play_music(mscMainTheme)
 </string>
           </argument>
         </arguments>
@@ -152,7 +182,19 @@ window_set_size(1280,720)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if menu = 0
+            <string>if menu = -1
+{
+if global.Enterpress
+{
+audio_set_volumes()
+menu = 0
+play_music(mscMainTheme)
+alarm[2] = -1
+alarm[3] = -1
+}
+}
+else
+if menu = 0
 {
 var prevball = ball;
 
@@ -444,7 +486,22 @@ ini_close()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if menu = 0
+            <string>if menu = -1
+{
+if alarm[2] = -1
+{
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_set_font(fntTimes)
+draw_set_colour(c_white)
+draw_text(320,180,"New Mono Ultra:
+My Crow Scoff Pic
+Silly Co-Volcano Co-Knee Yo Sis!")
+}
+
+draw_sprite_ext(sprChristinaBig,1,500+alarm[2]*20,200,-1,1,0,c_white,1)
+}
+else if menu = 0
 {
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
@@ -526,7 +583,7 @@ text_left("Programming",123)
 text_right("David Kimmie",123)
 
 text_left("The Voice",143)
-text_right("David Kimmie",143)
+text_right("Christina Grimmie",143)
 
 text_left("Music",163)
 text_right("David Kimmie",163)
@@ -534,12 +591,13 @@ text_right("Christina Grimmie",183)
 
 text_left("Art",203)
 text_right("David Kimmie",203)
+text_right("Cassie Wills",223)
 
-text_left("Friendship",223)
-text_right("Team Grimmie",223)
+text_left("Friendship",243)
+text_right("Team Grimmie",243)
 
 draw_set_halign(fa_center)
-draw_text(320,280,"thanks for watching bye")
+draw_text(320,280,"to be updated")
 }
 else
 if menu = 5

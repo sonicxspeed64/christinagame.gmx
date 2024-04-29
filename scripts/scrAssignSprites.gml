@@ -17,24 +17,7 @@ sprCharUseUp = sprChristinaUseUp
 sprCharArrow = sprChristinaArrow
 sprCharBomb = sprChristinaBomb
 }
-else if argument0 = "Rink"
+else if argument0 = "Mark"
 {
-sprChar = sprRink
-sprCharDown = sprRinkDown
-sprCharUp = sprRinkUp
 
-sprCharShield = sprRinkShield
-sprCharShieldDown = sprRinkShieldDown
-sprCharShieldUp = sprRinkShieldUp
-
-sprCharUse = sprRinkUse
-sprCharUseDown = sprRinkUseDown
-sprCharUseUp = sprRinkUseUp
-
-sprCharArrow = sprRinkArrow
-sprCharBomb = sprRinkBomb
-
-sprCharSword = sprRinkSword
-sprCharSwordDown = sprRinkSwordDown
-sprCharSwordUp = sprRinkSwordUp
 }
