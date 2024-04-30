@@ -33,7 +33,9 @@ transdir = 0
 ball = 0
 menu = 0
 
-play_music(mscInvisible)
+music = mscInvisible
+play_music(music)
+voice = -1
 </string>
           </argument>
         </arguments>
@@ -124,6 +126,16 @@ else
 pause = !pause
 }
 }
+}
+}
+
+if voice != -1
+{
+if audio_is_paused(music)
+if !audio_is_playing(voice)
+{
+voice = -1
+audio_resume_sound(music)
 }
 }
 </string>

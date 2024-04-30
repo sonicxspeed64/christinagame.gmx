@@ -36,6 +36,9 @@ gomez = -1
 endgame = -1
 
 alarm[2] = 64
+
+music = mscMainTheme
+voice = -1
 </string>
           </argument>
         </arguments>
@@ -59,7 +62,7 @@ alarm[2] = 64
           <argument>
             <kind>1</kind>
             <string>menu = 0
-play_music(mscMainTheme)
+play_music(music)
 </string>
           </argument>
         </arguments>

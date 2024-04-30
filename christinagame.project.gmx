@@ -15,6 +15,7 @@
     <sounds name="foldsndVoice">
       <sound>sound\vocPneumonoultramicroscopicsilicovolcanoconiosis</sound>
       <sound>sound\vocBye</sound>
+      <sound>sound\vocShovel</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -57,12 +58,12 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\audio_set_volumes.gml</script>
     <scripts name="foldscrAssign">
       <script>scripts\scrAssignSprites.gml</script>
       <script>scripts\scrHitLucas.gml</script>
     </scripts>
     <scripts name="foldscrSettings">
-      <script>scripts\audio_set_volumes.gml</script>
       <script>scripts\save_settings.gml</script>
       <script>scripts\play_music.gml</script>
       <script>scripts\play_sound.gml</script>
